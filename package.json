@@ -1,0 +1,30 @@
+{
+  "name": "poc_protractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "conf.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.8",
+    "jasmine": "^3.2.0",
+    "protractor": "^5.4.1",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "jasmine": "^3.2.0",
+    "jasmine-reporters": "^2.3.2",
+    "jasmine-spec-reporter": "^5.0.2",
+    "protractor-html-reporter-2": "^1.0.4"
+  },
+  "scripts": {
+    "preinstall": "npm cache clear",
+    "setup":"npm install && node node_modules/protractor/bin/webdriver-manager update",
+    "start" : "node node_modules/protractor/bin/webdriver-manager start",
+    "test": "protractor conf.js"
+  },
+  "author": "leo",
+  "license": "ISC"
+}
